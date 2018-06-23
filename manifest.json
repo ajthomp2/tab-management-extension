@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+  "name": "TabAlex",
+  "description": "Tab Manager in new tab page",
+  "version": "1",
+  "author": "Alexander Thompson",
+  "browser_action": {
+    "default_icon": "user.png",
+    "default_title": "TabAlex"
+  },
+  "background": {
+    "scripts": ["/scripts/lodash.min.js", "/scripts/get_all_tabs.js"],
+    "persistent": false
+  },
+  "chrome_url_overrides": {
+    "newtab": "newTab.html"
+  },
+  "permissions": ["activeTab", "storage", "tabs"]
+}
